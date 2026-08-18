@@ -1,7 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/sebma/Documents/Code/DijkstrasAlgorithm/src/dijkstrasalgorithm/media/videos/main/1080p30/partial_movie_files/MainScene/1407427098_927392600_223132457.mp4'
-file 'file:C:/Users/sebma/Documents/Code/DijkstrasAlgorithm/src/dijkstrasalgorithm/media/videos/main/1080p30/partial_movie_files/MainScene/3453252822_4046863825_1524981808.mp4'
-file 'file:C:/Users/sebma/Documents/Code/DijkstrasAlgorithm/src/dijkstrasalgorithm/media/videos/main/1080p30/partial_movie_files/MainScene/3453252822_383554922_3524386918.mp4'
-file 'file:C:/Users/sebma/Documents/Code/DijkstrasAlgorithm/src/dijkstrasalgorithm/media/videos/main/1080p30/partial_movie_files/MainScene/3453252822_890780477_2369589232.mp4'
-file 'file:C:/Users/sebma/Documents/Code/DijkstrasAlgorithm/src/dijkstrasalgorithm/media/videos/main/1080p30/partial_movie_files/MainScene/3453252822_4046863825_4169860001.mp4'
-file 'file:C:/Users/sebma/Documents/Code/DijkstrasAlgorithm/src/dijkstrasalgorithm/media/videos/main/1080p30/partial_movie_files/MainScene/3453252822_3246802409_1539346232.mp4'

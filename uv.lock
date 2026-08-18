@@ -162,14 +162,10 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "manim" },
-    { name = "manim-dsa" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "manim", specifier = ">=0.21.0" },
-    { name = "manim-dsa" },
-]
+requires-dist = [{ name = "manim", specifier = ">=0.21.0" }]
 
 [[package]]
 name = "glcontext"
@@ -242,18 +238,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/b1/2e/08d46ab1eb765f054cc9e4f64e95896d6fc53642c8f0e29c6c5c29028fe7/manim-0.21.0.tar.gz", hash = "sha256:2f3d719e726c9abf49b1bea503fb17510ee2063dab53915ab44a2c47c32f9a13", size = 580380, upload-time = "2026-08-10T21:58:34.544Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/02/b9/52a764c6fd593055cd401ca1f5bae9701e0fca750ae7627d38a48869fc32/manim-0.21.0-py3-none-any.whl", hash = "sha256:021001097bb568372fa8f5d1dcf46ba085c8502c10efb2312ff45f19f7facb60", size = 679365, upload-time = "2026-08-10T21:58:32.824Z" },
-]
-
-[[package]]
-name = "manim-dsa"
-version = "0.4.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "manim" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/71/af/8706fc24f47810f8e3c6f4a40ca0700a3b36690a6a0d16bb6087ba22e714/manim_dsa-0.4.0.tar.gz", hash = "sha256:6f1c953086c3e7d167a8071e8bb664170f19a74f981d9dc16da9e39777def040", size = 477188, upload-time = "2025-08-12T15:03:57.879Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/8a/3d/c888c525ac41faa2bfed1827e5a074800ac4c55cde8d3f1d4f7ebab97e6f/manim_dsa-0.4.0-py3-none-any.whl", hash = "sha256:d867ea3fd1c63789538e11d9dc79943995389e564a8e387edaf63299bd106c18", size = 335308, upload-time = "2025-08-12T15:03:55.65Z" },
 ]
 
 [[package]]

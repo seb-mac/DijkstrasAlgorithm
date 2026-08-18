@@ -10,13 +10,13 @@ graph_data: dict[str, list[float]] = {
     "F":  [ 0,  0, 10,  8,  12,  0], #F
 }
 
-class WeightedGraph(GenericGraph):
-    def __init__(self, data: list[list[float]]):
-       self.data = data
-       self.vertex_list = [i for i in range(len(self.data))]
-       self.size = len(self.data)
+class WeightedGraph(Graph):
+    def __init__(self, data: dict[str, list[float]]):
+       self.graph_data = data
+       self.vertex_list = [i for i in range(len(self.graph_data))]
+       self.size = len(self.graph_data)
 
-       self.vertices
+       self.vertices = self.graph_data.keys()
 
     def printSolution(self, dist):
         print("Vertex \t Distance from Source")
@@ -53,10 +53,10 @@ class WeightedGraph(GenericGraph):
             # is shorter than current distance and vertex is not in
             # sptSet already
             for v in range(self.size):
-                if (self.data[u][v] > 0 and
+                if (self.graph_data[u][v] > 0 and
                     sptSet[v] == False and
-                    dist[v] > dist[u] + self.data[u][v]):
-                    dist[v] = dist[u] + self.data[u][v]
+                    dist[v] > dist[u] + self.graph_data[u][v]):
+                    dist[v] = dist[u] + self.graph_data[u][v]
 
         self.printSolution(dist)
 
