@@ -17,4 +17,4 @@ jobs:
             
       - name: Show all matching files
         run: |
-          rm  /media/**/partial_movie_files/
+          rm  media/**/partial_movie_files/
