@@ -16,3 +16,9 @@ jobs:
         run: pwd
       - name: get ls
         run: ls -la
+
+      - name: Remove Partial Scene Folders
+        run: cd /media/**/partial_movie_files
+
+      - name: ls new dir
+        run: ls -la
