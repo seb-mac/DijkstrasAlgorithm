@@ -1,3 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/sebma/Documents/Code/DijkstrasAlgorithm/src/dijkstrasalgorithm/media/videos/main/1080p30/partial_movie_files/MainScene/1407427098_1967812057_223132457.mp4'
-file 'file:C:/Users/sebma/Documents/Code/DijkstrasAlgorithm/src/dijkstrasalgorithm/media/videos/main/1080p30/partial_movie_files/MainScene/3453252822_4046863825_2880293266.mp4'
