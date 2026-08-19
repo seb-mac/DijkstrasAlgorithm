@@ -1,7 +1,6 @@
 from manim import * # type: ignore
 
 graph_data: dict[str, dict[str, float]] = {
-#           W   T  G2  G1    B   F
     "W":  { "W": 0, "T": 10,  "G2": 0,  "G1": 8,   "B": 9,  "F": 0}, #W
     "T":  {"W": 10,  "T": 0,  "G2": 6,  "G1": 0,   "B": 0,  "F": 0}, #T
     "G2": { "W": 0,  "T": 6,  "G2": 0,  "G1": 0,   "B": 8, "F": 10}, #G2
@@ -45,7 +44,7 @@ class WeightedGraph(Graph): # type: ignore
             edges = list(self.edge_list.keys()),
             labels = self.labels,
             layout_scale=3,
-            edge_type=labeled_edge,
+            #edge_type=labeled_edge,
             **kwargs
         )
 

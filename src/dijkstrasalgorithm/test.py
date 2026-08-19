@@ -1,4 +1,4 @@
-from manim import *
+from manim import * # type: ignore
 
 graph_data: dict[str, dict[str, float]] = {
     "W":  { "W": 0,   "T": 10,  "G2": 0,   "G1": 8,   "B": 9,   "F": 0},
