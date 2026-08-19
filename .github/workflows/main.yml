@@ -26,4 +26,4 @@ jobs:
             
       - name: Show all matching files
         run: |
-          echo "${{ steps.glob.outputs.paths }}"
+          rm "${{ steps.glob.outputs.paths }}"
