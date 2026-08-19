@@ -35,3 +35,4 @@ jobs:
           else
             git commit -m "Remove partial movie files"
             git push
+            fi
