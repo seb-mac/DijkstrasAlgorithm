@@ -25,4 +25,4 @@ jobs:
           echo /media/**/partial_movie_files/*
 
           # Actually delete them
-          rm -rf /media/**/partial_movie_files/**/*
+          find /media -type d -name "partial_movie_files" -exec rm -rf {}/* \;
