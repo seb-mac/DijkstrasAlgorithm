@@ -12,17 +12,15 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: get ls
-        run: ls -la
-            
-      - name: Show all matching files
+      - name: Debug media folder
         run: |
-          # Enable recursive globbing in Bash
+          echo "Listing media folder from repo root:"
+          ls -R ./media || echo "No media folder found"
+
+      - name: Remove partial movie files
+        run: |
           shopt -s globstar nullglob
+          echo "Matching files:"
+          echo ./media/**/partial_movie_files/**
 
-          # Safety: list matches before deleting
-          echo "Files to be deleted:"
-          echo /media/**/partial_movie_files/*
-
-          # Actually delete them
-          find ./media -type d -name "partial_movie_files" -exec rm -rf {}/* \;
+          rm -rf ./media/**/partial_movie_files/**
