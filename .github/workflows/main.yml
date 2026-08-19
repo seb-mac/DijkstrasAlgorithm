@@ -17,4 +17,12 @@ jobs:
             
       - name: Show all matching files
         run: |
-          rm  media/**/partial_movie_files/
+          # Enable recursive globbing in Bash
+          shopt -s globstar nullglob
+
+          # Safety: list matches before deleting
+          echo "Files to be deleted:"
+          echo /media/**/partial_movie_files/*
+
+          # Actually delete them
+          rm -f /media/**/partial_movie_files/*
