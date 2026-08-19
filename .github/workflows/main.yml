@@ -11,19 +11,7 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-        
-      - name: Get PWD
-        run: pwd
-      - name: get ls
-        run: ls -la
-
-      - name: Remove Partial Scene Folders
-        uses: tj-actions/glob@v22
-        id: glob
-        with:
-          files: |
-            /media/**/partial_movie_files/
             
       - name: Show all matching files
         run: |
-          rm "${{ steps.glob.outputs.paths }}"
+          rm  /media/**/partial_movie_files/
